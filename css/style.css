@@ -134,3 +134,8 @@ footer{
     color: red;
 }
 /* ////footer */
+.nav:hover{
+    background-color: lightcoral;
+    border-radius: 10px;
+    transition: 2s;
+}
