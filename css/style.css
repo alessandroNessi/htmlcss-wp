@@ -65,7 +65,9 @@ header>ul .nav a{
 /*banner overlay and backround image rules*/
 main .main_article{
     height: 430px;
-    background-image: url("..//img/banner.jpg");
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
 }
 
 .main_article>.text-position{
@@ -84,11 +86,9 @@ main .main_article{
 
 /*overlay and backround image rules*/
 .background_rules{
-    background-repeat: no-repeat;
-    border-radius: 20px;
-    overflow: hidden;
-    position: relative;
-    background-position: 50% 50%;
+    width: 100%;
+    height: inherit;
+    object-fit:cover;
 }
 .overlay::after{
     position: absolute;
@@ -106,19 +106,12 @@ main .main_article{
 .articles_title>h2{
     font-size: 2rem;
 }
-#banner1{
-    background-image: url(../img/img-1.jpg);
-}
-#banner2{
-    background-image: url(../img/banner-2.jpg);
-    background-size: 80%;
-}
-#banner3{
-    background-image: url(../img/img-3.jpg);
-}
 .mini{
     height: 150px;
-    background-size: 90%;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+    border-radius: 20px;
 }
 .float_container h4{
     font-weight: 400;
