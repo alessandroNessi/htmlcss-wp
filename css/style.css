@@ -1,7 +1,11 @@
+/*----------- general page style */
 *{
     margin: 0;
-    border: 0;
+    padding:0;
     box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
 }
 .page_frame footer{
     margin-top: 3px;
@@ -9,20 +13,15 @@
 .page_frame{
     width: 80%;
     margin: auto;
-    /* background-color: pink;
-    border: solid 1px black; */
 }
 .std_margin{
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .clearfix::after {
     content: "";
     clear: both;
     display: table;
   }
-header{
-    background-color: #E579E6;
-}
 main .main_article{
     background-color: #E1D67A;
 
@@ -49,3 +48,25 @@ footer{
 .article1, .article3{
     width: 25%;
 }
+/*----------- ////general page style */
+
+/* header styles */
+header #logo{
+    width: 150px;
+    border-right: 1px solid black;
+    padding-right: 20px;
+    margin-bottom: 30px;
+    cursor:pointer;
+}
+header>ul .nav{
+    display: inline-block;
+    padding-right: 10px;
+}
+header>ul .nav a{
+    text-transform: uppercase;
+    text-decoration: none;
+    cursor:pointer;
+    color: black;
+    font-weight: 200;
+}
+/*//// header styles */
