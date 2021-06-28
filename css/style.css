@@ -28,15 +28,15 @@ body{
 footer{
     background-color: #8801FE;
 }
-.articles_frame{
+/* .articles_frame{
     background-color: #0186FF;
-}
+} */
 .float_container{
     padding: 10px 0;
 }
-.article1, .article2, .article3{
+/* .article1, .article2, .article3{
     background-color: #ABCFE7;
-}
+} */
 .article1 , .article2, .article3{
     float: left;
 }
@@ -115,9 +115,19 @@ main .main_article{
 .articles_title>h2{
     font-size: 2rem;
 }
-#minibanner1{
+#banner1{
     background-image: url(../img/img-1.jpg);
-    height: 200px;
+}
+#banner2{
+    background-image: url(../img/banner-2.jpg);
+    background-size: 80%;
+}
+#banner3{
+    background-image: url(../img/img-3.jpg);
+}
+.mini{
+    height: 150px;
+    background-size: 90%;
 }
 .float_container h4{
     font-weight: 400;
