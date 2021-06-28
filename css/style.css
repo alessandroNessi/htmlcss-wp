@@ -22,10 +22,6 @@ body{
     clear: both;
     display: table;
   }
-main .main_article{
-    background-color: #E1D67A;
-
-}
 footer{
     background-color: #8801FE;
 }
@@ -70,3 +66,39 @@ header>ul .nav a{
     font-weight: 200;
 }
 /*//// header styles */
+
+/* main styles */
+main .main_article{
+    height: 430px;
+    background-image: url("..//img/banner.jpg");
+}
+.background_rules{
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+    background-position: 50% 50%;
+}
+.overlay::after{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color:rgba(0,0,0,0.2 );
+}
+.main_article>.text-position{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: 50px;
+    width: 400px;
+    font-weight: 200;
+}
+.main_article>.text-position>h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+/* ////main styles */
