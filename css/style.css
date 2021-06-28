@@ -25,18 +25,9 @@ body{
     clear: both;
     display: table;
   }
-footer{
-    background-color: #8801FE;
-}
-/* .articles_frame{
-    background-color: #0186FF;
-} */
 .float_container{
     padding: 10px 0;
 }
-/* .article1, .article2, .article3{
-    background-color: #ABCFE7;
-} */
 .article1 , .article2, .article3{
     float: left;
 }
@@ -138,3 +129,15 @@ main .main_article{
 }
 /*////articles section*/
 /* ////main styles */
+
+/* footer */
+footer{
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+}
+#heart::after{
+    content: "\2665";
+    color: red;
+}
+/* ////footer */
