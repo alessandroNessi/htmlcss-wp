@@ -17,6 +17,9 @@ body{
 .std_margin{
     margin-top: 20px;
 }
+.mini_margin{
+    margin-top: 10px;
+}
 .clearfix::after {
     content: "";
     clear: both;
@@ -31,15 +34,15 @@ footer{
 .float_container{
     padding: 10px 0;
 }
-.articles_title, .article1, .article2, .article3{
+.article1, .article2, .article3{
     background-color: #ABCFE7;
 }
 .article1 , .article2, .article3{
     float: left;
 }
 .article2{
-    width: calc(50% - 20px);
-    margin: 0 10px;
+    width: calc(50% - 40px);
+    margin: 0 20px;
 }
 .article1, .article3{
     width: 25%;
@@ -68,10 +71,27 @@ header>ul .nav a{
 /*//// header styles */
 
 /* main styles */
+/*banner overlay and backround image rules*/
 main .main_article{
     height: 430px;
     background-image: url("..//img/banner.jpg");
 }
+
+.main_article>.text-position{
+    color: white;
+    position: absolute;
+    z-index: 1;
+    bottom: 50px;
+    left: 50px;
+    width: 400px;
+    font-weight: 200;
+}
+.main_article>.text-position>h2{
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+/*overlay and backround image rules*/
 .background_rules{
     background-repeat: no-repeat;
     border-radius: 20px;
@@ -88,17 +108,23 @@ main .main_article{
     right: 0;
     background-color:rgba(0,0,0,0.2 );
 }
-.main_article>.text-position{
-    color: white;
-    position: absolute;
-    z-index: 1;
-    bottom: 50px;
-    left: 50px;
-    width: 400px;
-    font-weight: 200;
-}
-.main_article>.text-position>h2{
+/*////overlay and backround image rules*/
+/*////end banner*/
+
+/*articles section*/
+.articles_title>h2{
     font-size: 2rem;
-    font-weight: 300;
 }
+#minibanner1{
+    background-image: url(../img/img-1.jpg);
+    height: 200px;
+}
+.float_container h4{
+    font-weight: 400;
+}
+.float_container div>span{
+    font-weight: 100;
+    display: inline-block;
+}
+/*////articles section*/
 /* ////main styles */
